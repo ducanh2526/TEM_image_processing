@@ -1,0 +1,38 @@
+config_name: TEM image processing 
+
+video_magnification: 0.0384
+
+directory: {input_dir: ../input/exp_data/,
+            video_name: 11278793,
+            video_suffix: background,
+            out_dir: output/exp_data/,
+            w_contour_suffix: w_contour,
+            w_d_min_suffix: w_d_min,
+            w_base_border_suffix: w_base_border, 
+            template_matching_suffix: template_matching
+            }
+
+process_frame: {gray_thresh: 230, smooth_deg: 5,noise_tol: 7}
+template_matching: 
+  method: cv.TM_CCOEFF
+  template_crop: {left_width_crop_lb: 50, #50,
+                  left_width_crop_ub: 150, #150,
+                  left_height_crop_lb: 150, #150
+                  left_height_crop_ub: 550, #550 
+                  right_width_crop_lb: 400, #350, #400, 
+                  right_width_crop_ub: 500, #450, #500,
+                  right_height_crop_lb: 50, #100, #50, 
+                  right_height_crop_ub: 600 #550 #600
+                  }
+
+base_border_detect:
+  shifting_params_suffix: shifting_params 
+  shift_xy_suffix: shift_xy
+  w_base_border_suffix: w_base_border
+  smoothing_factor: 0.5
+  left_knot_idx: 4
+  right_knot_idx: 2
+  tolerance_width: 15
+
+                  
+  
