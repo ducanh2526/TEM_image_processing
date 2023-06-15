@@ -1,0 +1,23 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+keras-applications=1.0.8=pypi_0
+keras-nightly=2.5.0.dev2021032900=pypi_0
+keras-preprocessing=1.1.2=pypi_0
+libopencv=4.5.2=py36h3a58cea_0
+matplotlib=3.3.4=py36h5fab9bb_0
+matplotlib-base=3.3.4=py36hd391965_0
+numpy=1.19.5=py36hfc0c790_2
+numpy-base=1.18.5=py36hde5b4d6_0
+opencv=4.5.2=py36h5fab9bb_0
+pandas=1.1.3=py36he6710b0_0
+pickleshare=0.7.5=pypi_0
+py-opencv=4.5.2=py36hcb3619a_0
+pycparser=2.21=pypi_0
+pyyaml=5.4.1=py36h27cfd23_1
+scikit-image=0.17.2=py36hdf5156a_0
+scikit-learn=0.23.2=py36h0573a6f_0
+scipy=1.5.2=py36h0b6359f_0
+seaborn=0.11.2=pyhd3eb1b0_0
+tqdm=4.62.3=pyhd8ed1ab_0
+yaml=0.2.5=h7b6447c_0
